@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #21262d, #0d1117);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: #58a6ff;
+    font-size: 2.8rem;
+    text-shadow: 0 0 10px #58a6ff, 0 0 30px #58a6ff;
+    margin: 0;
+}
+
+#reminder-box {
+    background: #161b22;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 30px rgba(88, 166, 255, 0.2);
+}
+
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #21262d;
+    color: #c9d1d9;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+button {
+    background: #58a6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f6feb;
+}
+
+#notification {
+    display: none;
+    background: #238636;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 10px rgba(35, 134, 54, 0.5);
+}
+
+#view-history-button {
+    background: #58a6ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#view-history-button:hover {
+    background: #1f6feb;
+    box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.5);
+}
+
+#history-container {
+    background: #161b22;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 0px 30px rgba(88, 166, 255, 0.2);
+}
+
+.history-item {
+    background: #21262d;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.2);
+}
+
+.history-details strong {
+    color: #58a6ff;
+    font-size: 1.2rem;
+}
+
+/* Back to Main Button */
+#back-to-main-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(135deg, #58a6ff, #1f6feb);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.5);
+    border: 2px solid transparent;
+    position: relative;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    transition: all 0.3s ease;
+}
+
+#back-to-main-button::before {
+    content: '';
+    position: absolute;
+    inset: -2px; /* Creates the visual border effect */
+    border-radius: 10px; /* Matches the button radius */
+    background: linear-gradient(135deg, #58a6ff, #1f6feb, #58a6ff);
+    z-index: -1;
+}
+
+#back-to-main-button:hover {
+    background: linear-gradient(135deg, #1f6feb, #58a6ff);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(88, 166, 255, 0.7);
+}

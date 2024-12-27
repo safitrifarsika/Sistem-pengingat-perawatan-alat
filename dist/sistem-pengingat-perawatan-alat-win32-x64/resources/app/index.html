@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengingat Perawatan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pengingat Perawatan Alat</h1>
+  </header>
+  <main>
+    <div id="reminder-box">
+      <form id="reminder-form">
+        <label for="equipment">Nama Alat:</label>
+        <input type="text" id="equipment" name="equipment" placeholder="Masukkan nama alat" required>
+        
+        <label for="last-maintenance">Tanggal Perawatan Terakhir:</label>
+        <input type="date" id="last-maintenance" name="last-maintenance" required>
+        
+        <label for="maintenance-interval">Interval Perawatan (hari):</label>
+        <input type="number" id="maintenance-interval" name="maintenance-interval" placeholder="Masukkan interval (hari)" required>
+        
+        <button type="submit">Tambah Pengingat</button>
+      </form>
+    </div>
+    <div id="notification"></div>
+    <a id="view-history-button" href="history.html">Lihat Riwayat Perawatan</a>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
